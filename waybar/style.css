@@ -1,0 +1,159 @@
+@import "colors.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font Propo";
+    font-size: 1rem;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: @on_tertiary_fixed_variant;
+    color: @on_surface;
+}
+
+tooltip {
+  background: @background;
+}
+tooltip label {
+  color: @tertiary;
+}
+
+#window{
+    color: @tertiary;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: @tertiary;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active{
+    border-radius: 100px; 
+    min-width: 35px;
+    color: @tertiary;
+    background-color: @on_tertiary_fixed;
+}
+
+/*--------------Cpu, Termperature, Colorpicker, Memory, Idle_inhibitor----------------*/
+#custom-colorpicker, #cpu, #temperature, #memory, #custom-pacman,#idle_inhibitor {
+    background: @on_tertiary_fixed;
+    font-size: 16px;
+}
+
+#cpu {
+    color: @tertiary;
+}
+
+#memory {
+    color: @primary;
+}
+
+#temperature {
+    color: @tertiary;
+}
+
+#custom-pacman {
+    color: @tertiary;
+}
+
+#idle_inhibitor {
+    color: @tertiary;
+}
+
+#idle_inhibitor.activated {
+    color: @error;
+}
+
+#cpu {
+    color: @tertiary;
+    border-radius: 24px 0px 0px 10px;
+    padding-left: 16px;
+    padding-right: 7px;
+    margin-left: 7px;
+}
+
+#temperature, #memory, #custom-pacman, #idle_inhibitor {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#custom-colorpicker {
+    color: @tertiary;
+    border-radius: 0px 10px 24px 0px;
+    padding-right: 12px;
+    padding-left: 7px;
+    margin-right: 7px
+}
+
+#network,
+#pulseaudio,
+#bluetooth,
+#clock{
+    padding: 0 10px;
+    color: @tertiary;
+}
+
+/*-----------Playerctl-------------------*/
+#custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.foward {
+    background: @on_tertiary_fixed;
+    font-size: 22px;
+}
+#custom-playerctl.backward:hover, #custom-playerctl.play:hover, #custom-playerctl.foward:hover{
+    color: @on_surface;
+}
+#custom-playerctl.backward {
+    color: @tertiary;
+    /*border-radius: 24px 0px 0px 10px;*/
+    padding-left: 16px;
+    margin-left: 7px;
+}
+#custom-playerctl.play {
+    color: @tertiary;
+    padding: 0 5px;
+}
+#custom-playerctl.foward {
+    color: @tertiary;
+    /*border-radius: 0px 10px 24px 0px;*/
+    padding-right: 12px;
+    margin-right: 7px
+}
+#custom-playerlabel {
+    color: @tertiary;
+    padding: 0 20px;
+    border-radius: 24px 10px 24px 10px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/*-------------Launcher--------------*/
+#custom-launcher {
+    color: @tertiary;
+    background: @on_tertiary_fixed;
+    padding: 0 10px;
+}
+
+/*-----------SwayNC & Weather------------*/
+#custom-swaync, #custom-weather {
+    font-weight: bold;
+    background: @on_tertiary_fixed;
+    padding: 0px 10px;
+    color: @tertiary;
+}
+#custom-weather {
+    border-radius: 24px 10px 24px 10px;
+}
+
+/*-----------Group--------------*/
+#group-utility {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#custom-expand{
+    color: @on_tertiary_fixed;
+}
